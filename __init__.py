@@ -24,7 +24,6 @@ def index():
         return redirect('/userdata')
     return render_template('main.html')
 
-
 @app.route('/userdata')
 def users():
     cur = mysql.connection.cursor()
@@ -35,5 +34,3 @@ def users():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
